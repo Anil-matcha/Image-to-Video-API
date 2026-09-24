@@ -2,7 +2,7 @@
 
 Turn an image into a generated video. Compare first-frame, optional last-frame, duration, resolution, and quality controls across supported Muapi models.
 
-[Muapi Image to Video API landing page](https://muapi.ai/image-to-video-api) · [API reference](https://muapi.ai/docs/api-reference) · [Create an API key](https://muapi.ai/access-keys)
+[Muapi Image to Video API landing page](https://muapi.ai/image-to-video-api) · [API reference](https://muapi.ai/docs/api-reference) · [Playground](https://muapi.ai/playground) · [Create an API key](https://muapi.ai/access-keys)
 
 ## Related Projects
 
@@ -51,7 +51,7 @@ Poll until the task status is `completed` or `failed`. Read the response’s out
 
 ## Choosing an endpoint
 
-Compare supported inputs and output behavior first, then resolution, duration, quality controls, latency, and price for your use case. Similar names do not guarantee interchangeable request schemas. This repository lists representative routes; the [landing page](https://muapi.ai/image-to-video-api) contains the current task-specific explanation, examples, and pricing context.
+Compare supported inputs and output behavior first, then resolution, duration, quality controls, latency, and price for your use case. Similar names do not guarantee interchangeable request schemas. This repository lists representative routes; the canonical landing page contains the current task-specific explanation, examples, and pricing context.
 
 ## Errors and production notes
 
@@ -60,10 +60,3 @@ Compare supported inputs and output behavior first, then resolution, duration, q
 - Handle non-success HTTP responses and failed task states explicitly.
 - Retry only when appropriate for the error; avoid submitting duplicate billable jobs after a timeout without checking the original `request_id`.
 - Confirm current pricing and availability on the Muapi page before estimating production cost.
-
-## Links
-
-- [Muapi Image to Video API](https://muapi.ai/image-to-video-api)
-- [API reference](https://muapi.ai/docs/api-reference)
-- [Playground](https://muapi.ai/playground)
-- [API key setup](https://muapi.ai/access-keys)
